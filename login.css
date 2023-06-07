@@ -933,7 +933,7 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fourunits);
 }
-.login-container02 {
+.login-form {
   flex: 0 0 auto;
   width: 50%;
   height: auto;
@@ -946,7 +946,7 @@
   flex-direction: column;
   background-color: var(--dl-color-colorscheme-5);
 }
-.login-container03 {
+.login-container02 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
@@ -959,10 +959,9 @@
 .login-text1 {
   color: var(--dl-color-colorscheme-1);
 }
-.login-form {
+.login-container03 {
   gap: var(--dl-space-space-unit);
   width: 100%;
-  height: auto;
   display: flex;
   margin-bottom: var(--dl-space-space-unit);
   flex-direction: column;
@@ -1086,14 +1085,14 @@
   font-weight: 900;
 }
 @media(max-width: 1600px) {
-  .login-form {
+  .login-container03 {
     width: 100%;
     height: auto;
     flex-direction: column;
   }
 }
 @media(max-width: 767px) {
-  .login-container02 {
+  .login-form {
     width: 90%;
   }
 }
