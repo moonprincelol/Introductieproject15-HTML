@@ -456,31 +456,27 @@
               <span class="register-stay-signed-in">I agree with the</span>
               <span class="register-text4">terms and conditions</span>
             </div>
-            <div class="register-container18">
-              <div class="register-container19">
+            <div class="component3-container">
+              <div class="component3-container1">
                 <button
                   id="signUp"
                   name="signup_submit"
                   type="submit"
-                  class="register-button Button"
+                  class="component3-button Button"
                 >
-                  Register
+                  <span>Register</span>
                 </button>
               </div>
-              <span class="register-text5">OR</span>
-              <div
-                class="login-register-google-container login-register-google-root-class-name1"
-              >
-                <button onClick={signInWithGoogle}>
+              <span class="component3-text"><span>OR</span></span>
+              <div class="signInWithGoogle">
                 <img
                   alt="image"
                   src="public/google__g__logo-200w.png"
-                  class="login-register-google-image"
+                  class="component3-image"
                 />
-                <span class="login-register-google-text">
+                <span class="component3-text1">
                   <span>Sign up with Google</span>
                 </span>
-                </button>
               </div>
             </div>
           </div>
@@ -547,6 +543,7 @@
             import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
             import { getDatabase } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
             import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+            import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
             // TODO: Add SDKs for Firebase products that you want to use
             // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -567,8 +564,29 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
       const database = getDatabase(app);
-      const auth = getAuth();
+        export const auth = getAuth();
 
+        const provider = new GoogleAuthProvider();
+
+        export const signInWithGoogle = () => {
+          signInWithPopup(auth, provider)
+           .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+           const credential = GoogleAuthProvider.credentialFromResult(result);
+           const token = credential.accessToken;
+        // The signed-in user info.
+           const user = result.user;
+           }).catch((error) => {
+        // Handle Errors here.
+           const errorCode = error.code;
+           const errorMessage = error.message;
+        // The email of the user's account used.
+           const email = error.customData.email;
+        // The AuthCredential type that was used.
+          const credential = GoogleAuthProvider.credentialFromError(error);
+           });
+
+        };
       var signUp = document.getElementById('signUp');
       signUp.addEventListener('click', (e) => {
       	var email = document.getElementById('email').value;

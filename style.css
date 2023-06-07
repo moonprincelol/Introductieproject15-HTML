@@ -150,6 +150,21 @@
   background: none;
   -webkit-appearance: none;
 }
+.signInWithGoogle {
+  gap: var(--dl-space-space-halfunit);
+  width: auto;
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  position: relative;
+  align-items: center;
+  border-color: var(--dl-color-colorscheme-2);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: var(--dl-radius-radius-radius25);
+  flex-direction: row;
+  justify-content: center;
+}
 .Heading {
   font-size: 32px;
   font-family: Poppins;

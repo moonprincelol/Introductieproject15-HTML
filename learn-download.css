@@ -1370,6 +1370,13 @@
   justify-content: space-between;
   background-color: var(--dl-color-colorscheme-5);
 }
+.learn-download-filter-form {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .learn-download-container1 {
   width: 75%;
   display: flex;
@@ -1385,6 +1392,13 @@
   margin-bottom: var(--dl-space-space-twounits);
   flex-direction: column;
   justify-content: space-between;
+}
+@media(max-width: 1600px) {
+  .learn-download-filter-form {
+    width: 228px;
+    height: 51px;
+    align-self: flex-end;
+  }
 }
 @media(max-width: 767px) {
   .learn-download-blog {

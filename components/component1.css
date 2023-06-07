@@ -1,4 +1,4 @@
-.login-register-google-container {
+.component1-container {
   gap: var(--dl-space-space-halfunit);
   width: auto;
   cursor: pointer;
@@ -13,13 +13,12 @@
   flex-direction: row;
   justify-content: center;
 }
-.login-register-google-image {
+.component1-image {
   width: 25px;
   object-fit: cover;
 }
-.login-register-google-text {
+.component1-text {
   color: var(--dl-color-colorscheme-2);
   font-style: normal;
   font-weight: 500;
 }
-

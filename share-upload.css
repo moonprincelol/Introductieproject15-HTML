@@ -968,7 +968,6 @@
   align-items: center;
   border-radius: var(--dl-radius-radius-radius25);
   flex-direction: column;
-  justify-content: center;
 }
 .share-upload-textinput {
   flex: 0 0 auto;
@@ -983,17 +982,12 @@
   flex-direction: column;
   justify-content: center;
 }
-.share-upload-container2 {
-  display: flex;
-  position: relative;
-}
-.share-upload-button {
+.share-upload-textinput1 {
   color: rgb(255, 255, 255);
   width: auto;
   cursor: pointer;
   height: auto;
   align-self: center;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
   text-align: center;
   padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-twounits);

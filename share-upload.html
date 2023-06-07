@@ -327,17 +327,26 @@
         <div class="share-upload-upload">
           <div class="share-upload-container1">
             <h1 class="share-upload-text">Upload your files to the Vault</h1>
-            <form class="share-upload-form">
-              <input type="file" class="share-upload-textinput" />
+            <form
+              id="file-upload-form"
+              enctype="multipart/form-data"
+              class="share-upload-form"
+            >
+              <input
+                type="file"
+                id="file-input"
+                class="share-upload-textinput"
+              />
               <span>
                 <span>Choose files or drag and drop&nbsp;</span>
                 <br />
               </span>
-              <div class="share-upload-container2">
-                <button type="submit" class="share-upload-button Button">
-                  Upload Files
-                </button>
-              </div>
+              <input
+                type="submit"
+                placeholder="Upload Files"
+                value="Upload Files"
+                class="share-upload-textinput1 Button"
+              />
             </form>
           </div>
         </div>
@@ -426,6 +435,7 @@
             import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
             import { getDatabase } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
             import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+            import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
             // TODO: Add SDKs for Firebase products that you want to use
             // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -446,8 +456,29 @@
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
       const database = getDatabase(app);
-      const auth = getAuth();
+        export const auth = getAuth();
 
+        const provider = new GoogleAuthProvider();
+
+        export const signInWithGoogle = () => {
+          signInWithPopup(auth, provider)
+           .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+           const credential = GoogleAuthProvider.credentialFromResult(result);
+           const token = credential.accessToken;
+        // The signed-in user info.
+           const user = result.user;
+           }).catch((error) => {
+        // Handle Errors here.
+           const errorCode = error.code;
+           const errorMessage = error.message;
+        // The email of the user's account used.
+           const email = error.customData.email;
+        // The AuthCredential type that was used.
+          const credential = GoogleAuthProvider.credentialFromError(error);
+           });
+
+        };
       var signUp = document.getElementById('signUp');
       signUp.addEventListener('click', (e) => {
       	var email = document.getElementById('email').value;

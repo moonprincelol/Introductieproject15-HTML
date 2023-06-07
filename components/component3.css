@@ -1,0 +1,42 @@
+.component3-container {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.component3-container1 {
+  display: flex;
+  position: relative;
+}
+.component3-button {
+  color: rgb(255, 255, 255);
+  width: auto;
+  cursor: pointer;
+  height: 100%;
+  align-self: center;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  text-align: center;
+  transition: 0.3s;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: var(--dl-radius-radius-radius10);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-colorscheme-2);
+}
+.component3-text {
+  color: var(--dl-color-colorscheme-1);
+  font-style: normal;
+  font-weight: 900;
+}
+.component3-image {
+  width: 25px;
+  object-fit: cover;
+}
+.component3-text1 {
+  color: var(--dl-color-colorscheme-2);
+  font-style: normal;
+  font-weight: 500;
+}

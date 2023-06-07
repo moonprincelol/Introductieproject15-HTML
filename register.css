@@ -531,32 +531,48 @@
   }
 }
 
-.login-register-google-container {
+.component3-container {
   gap: var(--dl-space-space-halfunit);
-  width: auto;
-  cursor: pointer;
+  width: 100%;
   display: flex;
-  padding: var(--dl-space-space-halfunit);
   position: relative;
   align-items: center;
-  border-color: var(--dl-color-colorscheme-2);
-  border-style: solid;
-  border-width: 2px;
-  border-radius: var(--dl-radius-radius-radius25);
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
 }
-.login-register-google-image {
+.component3-container1 {
+  display: flex;
+  position: relative;
+}
+.component3-button {
+  color: rgb(255, 255, 255);
+  width: auto;
+  cursor: pointer;
+  height: 100%;
+  align-self: center;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  text-align: center;
+  transition: 0.3s;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: var(--dl-radius-radius-radius10);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-colorscheme-2);
+}
+.component3-text {
+  color: var(--dl-color-colorscheme-1);
+  font-style: normal;
+  font-weight: 900;
+}
+.component3-image {
   width: 25px;
   object-fit: cover;
 }
-.login-register-google-text {
+.component3-text1 {
   color: var(--dl-color-colorscheme-2);
   font-style: normal;
   font-weight: 500;
 }
-
-
 
 .footer-footer {
   width: 100%;
@@ -1155,39 +1171,6 @@
   font-style: normal;
   font-weight: 500;
   text-decoration: underline;
-}
-.register-container18 {
-  gap: var(--dl-space-space-halfunit);
-  width: 100%;
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-}
-.register-container19 {
-  display: flex;
-  position: relative;
-}
-.register-button {
-  color: rgb(255, 255, 255);
-  width: auto;
-  cursor: pointer;
-  height: 100%;
-  align-self: center;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-  text-align: center;
-  transition: 0.3s;
-  padding-top: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-twounits);
-  border-radius: var(--dl-radius-radius-radius10);
-  padding-right: var(--dl-space-space-twounits);
-  padding-bottom: var(--dl-space-space-unit);
-  background-color: var(--dl-color-colorscheme-2);
-}
-.register-text5 {
-  color: var(--dl-color-colorscheme-1);
-  font-style: normal;
-  font-weight: 900;
 }
 @media(max-width: 1600px) {
   .register-form {
