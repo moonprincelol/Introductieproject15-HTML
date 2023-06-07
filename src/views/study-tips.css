@@ -1,0 +1,124 @@
+.study-tips-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-size: auto;
+  justify-content: flex-start;
+  background-image: url("/colored-1500w.png");
+  background-position: center;
+}
+.study-tips-features {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dl-color-colorscheme-1);
+}
+.study-tips-container1 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  flex-direction: column;
+}
+.study-tips-text {
+  color: var(--dl-color-colorscheme-5);
+  font-size: 3rem;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.study-tips-text3 {
+  color: var(--dl-color-colorscheme-5);
+  width: 70%;
+  font-size: 1.15rem;
+  text-align: center;
+}
+.study-tips-container2 {
+  width: 100%;
+  display: grid;
+  grid-gap: var(--dl-space-space-twounits);
+  margin-top: var(--dl-space-space-fourunits);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.study-tips-testimonial {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dl-color-colorscheme-5);
+}
+.study-tips-text6 {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+}
+.study-tips-text7 {
+  color: rgb(0, 0, 0);
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin-top: var(--dl-space-space-twounits);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.study-tips-container3 {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+@media(max-width: 991px) {
+  .study-tips-text {
+    text-align: center;
+  }
+  .study-tips-text3 {
+    text-align: center;
+  }
+  .study-tips-container2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .study-tips-text6 {
+    text-align: center;
+  }
+  .study-tips-text7 {
+    text-align: center;
+  }
+  .study-tips-container3 {
+    flex-direction: column;
+  }
+}
+@media(max-width: 767px) {
+  .study-tips-features {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .study-tips-text {
+    text-align: center;
+  }
+  .study-tips-testimonial {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 479px) {
+  .study-tips-features {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+  .study-tips-container2 {
+    grid-template-columns: 1fr;
+  }
+  .study-tips-testimonial {
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}

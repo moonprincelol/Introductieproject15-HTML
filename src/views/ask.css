@@ -1,0 +1,94 @@
+.ask-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-size: auto;
+  justify-content: flex-start;
+  background-image: url("/colored-1500w.png");
+  background-position: center;
+}
+.ask-container1 {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
+  justify-content: flex-start;
+  background-color: var(--dl-color-colorscheme-1);
+}
+.ask-text {
+  color: var(--dl-color-colorscheme-5);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.ask-form {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius25);
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--dl-color-colorscheme-5);
+}
+.ask-text3 {
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.ask-textinput {
+  width: 75%;
+  padding: 0.5rem;
+  border-color: var(--dl-color-colorscheme-7);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius4);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.ask-text4 {
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.ask-textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 36px;
+  border-color: var(--dl-color-colorscheme-7);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.ask-text5 {
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.ask-select {
+  padding: 0.5rem;
+  border-color: var(--dl-color-colorscheme-7);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius4);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.ask-text6 {
+  align-self: center;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.ask-navlink {
+  display: contents;
+}
+.ask-component1 {
+  text-decoration: none;
+}
+@media(max-width: 767px) {
+  .ask-form {
+    width: 60%;
+  }
+}
+@media(max-width: 479px) {
+  .ask-form {
+    width: 80%;
+    align-self: center;
+  }
+}

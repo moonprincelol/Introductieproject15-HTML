@@ -1,0 +1,180 @@
+.specify-upload-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-size: auto;
+  justify-content: flex-start;
+  background-image: url("/colored-1500w.png");
+  background-position: center;
+}
+.specify-upload-container1 {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-self: center;
+  align-items: center;
+  padding-top: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
+  justify-content: flex-start;
+  background-color: var(--dl-color-colorscheme-1);
+}
+.specify-upload-text {
+  color: var(--dl-color-colorscheme-5);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.specify-upload-form {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius25);
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--dl-color-colorscheme-5);
+}
+.specify-upload-text03 {
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.specify-upload-textinput {
+  width: 75%;
+  padding: 0.5rem;
+  border-color: var(--dl-color-colorscheme-7);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius4);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.specify-upload-text04 {
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.specify-upload-textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 36px;
+  border-color: var(--dl-color-colorscheme-7);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.specify-upload-container2 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.specify-upload-container3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.specify-upload-text05 {
+  text-align: center;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.specify-upload-select {
+  padding: 0.5rem;
+  border-color: var(--dl-color-colorscheme-7);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius4);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.specify-upload-container4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.specify-upload-text08 {
+  text-align: center;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.specify-upload-select1 {
+  padding: 0.5rem;
+  border-color: var(--dl-color-colorscheme-7);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius4);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.specify-upload-container5 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.specify-upload-text09 {
+  text-align: center;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.specify-upload-select2 {
+  padding: 0.5rem;
+  border-color: var(--dl-color-colorscheme-7);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius4);
+  margin-bottom: var(--dl-space-space-unit);
+}
+.specify-upload-text10 {
+  align-self: center;
+  text-align: center;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.specify-upload-navlink {
+  display: contents;
+}
+.specify-upload-component1 {
+  text-decoration: none;
+}
+@media(max-width: 1200px) {
+  .specify-upload-text {
+    color: var(--dl-color-colorscheme-5);
+  }
+}
+@media(max-width: 991px) {
+  .specify-upload-container2 {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+@media(max-width: 767px) {
+  .specify-upload-form {
+    width: 60%;
+  }
+  .specify-upload-container2 {
+    flex-direction: column;
+  }
+  .specify-upload-container3 {
+    align-items: flex-start;
+  }
+  .specify-upload-text05 {
+    text-align: left;
+  }
+  .specify-upload-container4 {
+    align-items: flex-start;
+  }
+  .specify-upload-text08 {
+    text-align: left;
+  }
+  .specify-upload-container5 {
+    align-items: flex-start;
+    margin-left: 0px;
+  }
+  .specify-upload-text09 {
+    text-align: left;
+  }
+}
+@media(max-width: 479px) {
+  .specify-upload-form {
+    width: 100%;
+    align-self: center;
+  }
+  .specify-upload-textinput {
+    width: 100%;
+  }
+}
