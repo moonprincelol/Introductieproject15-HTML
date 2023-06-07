@@ -37,6 +37,7 @@ const ShareUpload = (props) => {
             </span>
             <input
               type="submit"
+              id="signUp"
               value="Upload Files"
               placeholder="Upload Files"
               className="share-upload-textinput1 Button"

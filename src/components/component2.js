@@ -31,19 +31,19 @@ const Component2 = (props) => {
 }
 
 Component2.defaultProps = {
+  image_src: '/google__g__logo-200w.png',
+  text1: 'Sign up with Google',
+  image_alt: 'image',
   text: 'OR',
   button: 'Register',
-  image_src: '/google__g__logo-200w.png',
-  image_alt: 'image',
-  text1: 'Sign up with Google',
 }
 
 Component2.propTypes = {
+  image_src: PropTypes.string,
+  text1: PropTypes.string,
+  image_alt: PropTypes.string,
   text: PropTypes.string,
   button: PropTypes.string,
-  image_src: PropTypes.string,
-  image_alt: PropTypes.string,
-  text1: PropTypes.string,
 }
 
 export default Component2

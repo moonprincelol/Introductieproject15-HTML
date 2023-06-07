@@ -68,8 +68,10 @@ const LOGIN = (props) => {
           <div className="login-container10">
             <div className="login-container11">
               <button
-                id="saveData"
+                id="login"
+                name="login"
                 type="submit"
+                value="Login"
                 className="login-button Button"
               >
                 LOGIN

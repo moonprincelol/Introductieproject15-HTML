@@ -243,6 +243,48 @@
   font-weight: 500;
   text-decoration: underline;
 }
+.register-container18 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.register-container19 {
+  display: flex;
+  position: relative;
+}
+.register-button {
+  color: rgb(255, 255, 255);
+  width: auto;
+  cursor: pointer;
+  height: 100%;
+  align-self: center;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  text-align: center;
+  transition: 0.3s;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: var(--dl-radius-radius-radius10);
+  padding-right: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-colorscheme-2);
+}
+.register-text5 {
+  color: var(--dl-color-colorscheme-1);
+  font-style: normal;
+  font-weight: 900;
+}
+.register-image {
+  width: 25px;
+  object-fit: cover;
+}
+.register-text6 {
+  color: var(--dl-color-colorscheme-2);
+  font-style: normal;
+  font-weight: 500;
+}
 @media(max-width: 1600px) {
   .register-form {
     width: 100%;
