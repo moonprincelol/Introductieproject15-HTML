@@ -3,6 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Header from '../components/header'
+import Component2 from '../components/component2'
 import Footer from '../components/footer'
 import './register.css'
 
@@ -130,27 +131,7 @@ const REGISTER = (props) => {
             <span className="register-stay-signed-in">I agree with the</span>
             <span className="register-text4">terms and conditions</span>
           </div>
-          <div className="register-container18">
-            <div className="register-container19">
-              <button
-                id="signUp"
-                name="signup_submit"
-                type="submit"
-                className="register-button Button"
-              >
-                Register
-              </button>
-            </div>
-            <span className="register-text5">OR</span>
-            <div className="signInWithGoogle">
-              <img
-                alt="image"
-                src="1df8d7f7-5876-41f4-a8ad-a180c3ea8205"
-                className="register-image"
-              />
-              <span className="register-text6">Sign up with Google</span>
-            </div>
-          </div>
+          <Component2></Component2>
         </div>
       </div>
       <Footer rootClassName="footer-root-class-name13"></Footer>
