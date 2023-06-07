@@ -381,9 +381,9 @@
                   </div>
                   <input
                     type="text"
+                    id="firstname"
                     placeholder="First Name"
                     autocomplete="given-name"
-                    id="firstname"
                     class="register-textinput2 input-inverted"
                   />
                 </div>
@@ -397,9 +397,9 @@
                   </div>
                   <input
                     type="text"
+                    id="lastname"
                     placeholder="Last Name"
                     autocomplete="family-name"
-                    id="lastname"
                     class="register-textinput3 input-inverted"
                   />
                 </div>
@@ -572,6 +572,8 @@
       	var email = document.getElementById('email').value;
       	var password = document.getElementById('password').value;
       	var username = document.getElementById('username').value;
+          var firstname = document.getElementById('firstname').value;
+          var lastname = document.getElementById('lastname').value;
 
       	createUserWithEmailAndPassword(auth, email, password)
       	  .then((userCredential) => {

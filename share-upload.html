@@ -327,24 +327,22 @@
         <div class="share-upload-upload">
           <div class="share-upload-container1">
             <h1 class="share-upload-text">Upload your files to the Vault</h1>
-            <div type="file" class="share-upload-container2">
-              <span class="share-upload-text1">
-                Choose files or drag and drop&nbsp;
+            <form class="share-upload-form">
+              <input type="file" class="share-upload-textinput" />
+              <span>
+                <span>Choose files or drag and drop&nbsp;</span>
+                <br />
               </span>
-              <a href="specify-upload.html" class="share-upload-navlink">
-                <div
-                  class="button-dark-blue-container button-dark-blue-root-class-name1"
-                >
-                  <button class="button-dark-blue-button Button">
-                    <span>Upload Files</span>
-                  </button>
-                </div>
-              </a>
-            </div>
+              <div class="share-upload-container2">
+                <button type="submit" class="share-upload-button Button">
+                  Upload Files
+                </button>
+              </div>
+            </form>
           </div>
         </div>
         <div class="share-upload-feature-card">
-          <h1 class="share-upload-text2">WHY?</h1>
+          <h1 class="share-upload-text4">WHY?</h1>
           <div class="explanation-container">
             <svg viewBox="0 0 1024 1024" class="explanation-icon">
               <path
@@ -455,6 +453,8 @@
       	var email = document.getElementById('email').value;
       	var password = document.getElementById('password').value;
       	var username = document.getElementById('username').value;
+          var firstname = document.getElementById('firstname').value;
+          var lastname = document.getElementById('lastname').value;
 
       	createUserWithEmailAndPassword(auth, email, password)
       	  .then((userCredential) => {

@@ -528,6 +528,8 @@
       	var email = document.getElementById('email').value;
       	var password = document.getElementById('password').value;
       	var username = document.getElementById('username').value;
+          var firstname = document.getElementById('firstname').value;
+          var lastname = document.getElementById('lastname').value;
 
       	createUserWithEmailAndPassword(auth, email, password)
       	  .then((userCredential) => {
